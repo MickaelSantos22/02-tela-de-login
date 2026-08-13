@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 950px;
+    height: 550px;
+    background: white;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+/* LADO DA IMAGEM */
+
+.imagem {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+/* LADO DO LOGIN */
+
+.login {
+    flex: 2;
+    background: #5b79ca;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.login h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* TEXTO DE CADASTRO */
+
+.top-text {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+.top-text p {
+    margin: 0;
+}
+
+.top-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-text a:hover {
+    text-decoration: underline;
+}
+
+/* FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    padding: 0 12px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+/* REMEMBER ME */
+
+.rememberme__esqueceu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.rememberme__esqueceu a {
+    color: white;
+    text-decoration: none;
+}
+
+.rememberme__esqueceu a:hover {
+    text-decoration: underline;
+}
+
+/* BOTÃO */
+
+button {
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
