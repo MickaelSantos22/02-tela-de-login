@@ -138,3 +138,130 @@ button {
 button:hover {
     background: rgba(255, 255, 255, 0.4);
 }
+
+/* tablet */
+
+@media (max-width: 800px) {
+    
+    .imagem {
+        display: none;
+    }
+
+    main {
+        min-height: auto;
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .login {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .login h2 {
+        font-size: 27px;
+    }
+
+    .top-text {
+        font-size: 11px;
+        margin-bottom: 25px;
+    }
+
+    .rememberme__esqueceu {
+        font-size: 11px;
+        gap: 7px;
+    }
+}   
+
+@media (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+        padding: 20px 12px;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        max-width: 420px;
+        min-height: auto;
+        height: auto;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+        padding: 35px 25px;
+        flex: none;
+    }
+
+    .login h2 {
+        font-size: 28px;
+    }
+
+    .top-text {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        height: 48px;
+    }
+
+    .rememberme__esqueceu {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 8px;
+        font-size: 11px;
+    }
+
+    .rememberme__esqueceu label {
+        white-space: normal;
+    }
+
+    .rememberme__esqueceu a {
+        white-space: normal;
+        text-align: right;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+   Até 380px
+========================================= */
+
+@media (max-width: 380px) {
+
+    .imagem {
+        min-height: 190px;
+        padding: 20px;
+    }
+
+    .imagem img {
+        max-width: 220px;
+    }
+
+    .login {
+        padding: 30px 18px;
+    }
+
+    .login h2 {
+        font-size: 25px;
+    }
+
+    .top-text {
+        font-size: 11px;
+    }
+
+    .rememberme__esqueceu {
+        font-size: 10px;
+        gap: 6px;
+    }
+
+}
